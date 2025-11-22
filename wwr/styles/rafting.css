@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #eef4f8;
+    --accent1-color: #ffffff;
+    --text-dark: #333333;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+header, main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header img {
+    max-width: 100px;
+}
+
+header nav {
+    justify-self: end;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #2c4a7c;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 0; 
+}
+
+p, section {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.hero {
+    position: relative;
+    margin-top: 20px; 
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(60, 90, 140, 0.85); 
+    color: var(--accent1-color);
+    font-size: 2rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(60, 90, 140, 0.85); 
+    color: var(--accent1-color);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero article p {
+    padding-right: 20px;
+}
+
+.hero article img {
+    width: 150px;
+    border: 2px solid var(--secondary-color);
+    float: right;
+}
+
+footer {
+    border-top: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
