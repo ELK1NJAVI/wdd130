@@ -13,7 +13,9 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
+        <div class="logo-box">
+            <img src="images/logo.png" alt="Rafting Company Logo">
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -24,66 +26,69 @@
 
     <main>
         <div class="hero">
-            <img src="images/hero-background.jpg" alt="Rafting Boat on River" class="hero-img">
-            <h1>Adventure Fun</h1>
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy Client Rafting">
-                <p>We provide the most thrilling and safe white water rafting experiences. Our mission is to connect
-                    people with nature through adventure.</p>
-            </article>
+            <img src="images/hero-background.jpg" alt="Rafting Boat on River">
+            <div class="hero-content">
+                <h1>About Adventure Fun</h1>
+                <p>Connecting people with nature through adventure</p>
+            </div>
         </div>
 
-        <section class="history">
-            <h2>History</h2>
+        <section style="padding: 40px 20px; max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2>Our History</h2>
             <div class="history-content">
-                <p>Elkin established Adventure Fun in 2024. Our company started with just two rafts and a big dream to
-                    conquer the rivers.</p>
-                <img src="images/history.jpg" alt="History of the company">
-                <p>Today, we guide hundreds of adventurers down the river every season, maintaining our commitment to
-                    safety and fun for everyone.</p>
+                <p style="margin-bottom: 20px;">Elkin established Adventure Fun in 2024. Our company started with just
+                    two rafts and a big dream to conquer the rivers. We wanted to share the thrill of the rapids with
+                    the world.</p>
+
+                <img src="images/history.jpg" alt="History of the company"
+                    style="width: 100%; max-width: 600px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+
+                <p style="margin-top: 20px;">Today, we guide hundreds of adventurers down the river every season,
+                    maintaining our commitment to safety and fun for everyone. From humble beginnings to a premier
+                    rafting destination, our passion remains the same.</p>
             </div>
         </section>
 
-        <section class="adventure">
+        <section class="grid-section">
             <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/rapid1.jpg" alt="Rafting Rapid 1">
-                    <figcaption>Devil's Teeth</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapid2.jpg" alt="Rafting Rapid 2">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapid3.jpg" alt="Rafting Rapid 3">
-                    <figcaption>Half Day Trip</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapid4.jpg" alt="Rafting Rapid 4">
-                    <figcaption>Family Run</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapid5.jpg" alt="Rafting Rapid 5">
-                    <figcaption>Canyon Rapids</figcaption>
-                </figure>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/happy-client.jpg" alt="Happy Client">
+                    <h3>Happy Clients</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rapid1.jpg" alt="Devil's Teeth">
+                    <h3>Devil's Teeth</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rapid2.jpg" alt="Big Mallard">
+                    <h3>Big Mallard</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rapid3.jpg" alt="Half Day Trip">
+                    <h3>Half Day Trip</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rapid4.jpg" alt="Family Run">
+                    <h3>Family Run</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rapid5.jpg" alt="Canyon Rapids">
+                    <h3>Canyon Rapids</h3>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 | Adventure Fun | Elkin Javier Almeida Delgado</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.svg" alt="Instagram">
-            </a>
-        </nav>
+        <p>Adventure Fun &copy; 2025 - Elkin Javier Almeida Delgado</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
     </footer>
 </body>
 

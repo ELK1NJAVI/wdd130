@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Adventure Fun</title>
     <meta name="description"
-        content="Contact Adventure Fun for reservations, questions about our rafting trips, or website suggestions. We are here to help!">
+        content="Contact Adventure Fun for reservations, questions about our rafting trips, or website suggestions.">
     <meta name="author" content="Elkin Javier Almeida Delgado">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
+        <div class="logo-box">
+            <img src="images/logo.png" alt="Rafting Company Logo">
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -23,93 +25,111 @@
     </header>
 
     <main>
-        <div class="company-info">
-            <h1>White Water Rafting Company</h1>
-            <p>
+        <div class="hero">
+            <img src="images/rafting2.jpg" alt="Rafting Boat on River">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>We'd Love to Hear From You</p>
+            </div>
+        </div>
+
+        <section style="text-align: center; padding: 40px 20px;">
+            <h2>Get In Touch</h2>
+            <p style="font-size: 1.2rem; line-height: 1.6;">
                 123 Main River Street<br>
                 Kolob, California<br>
                 +1 999 999 9999<br>
                 info@whitewater.com
             </p>
-        </div>
+        </section>
 
-        <div class="contact-section">
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.590509628284!2d-119.5393282846985!3d36.78129797995257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de21b063851%3A0x2567475306660161!2sKings%20River%20Expeditions!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-                    width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <section class="grid-section" style="background-color: #f9f9f9;">
+            <div class="grid-container">
 
-            <form action="#" method="get" class="contact-form">
-                <h2>Contact Us</h2>
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Your Name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="user_email" placeholder="Your Email" required>
-
-                <fieldset>
-                    <legend>Message Purpose</legend>
-                    <div class="radio-option">
-                        <input type="radio" id="inquiry" name="subject" value="inquiry" checked>
-                        <label for="inquiry">General Inquiry</label>
-                    </div>
-                    <div class="radio-option">
-                        <input type="radio" id="reservation" name="subject" value="reservation">
-                        <label for="reservation">Reservation Question</label>
-                    </div>
-                    <div class="radio-option">
-                        <input type="radio" id="suggestion" name="subject" value="suggestion">
-                        <label for="suggestion">Website Suggestion</label>
-                    </div>
-                </fieldset>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="user_message" rows="4" placeholder="Type your message here..."
-                    required></textarea>
-
-                <div class="checkbox-option">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                <div class="grid-item" style="border: none; box-shadow: none; padding: 0;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.183428399589!2d-74.00841682424754!3d40.71395807139316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a21fb011c85%3A0x33df10e49762f8e4!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sar!4v1700000000000!5m2!1sen!2sar"
+                        width="100%" height="450" style="border:0; border-radius: 5px;" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
                 </div>
 
-                <button type="submit">Get in Touch!</button>
-            </form>
-        </div>
+                <div class="grid-item" style="text-align: left; background-color: #fff;">
+                    <form action="#" method="get" class="newsletter-form">
+                        <h2 style="text-align: center; margin-bottom: 20px;">Send a Message</h2>
 
-        <section class="employees">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+
+                        <fieldset
+                            style="border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+                            <legend style="padding: 0 5px; color: #666;">Message Purpose</legend>
+                            <div style="margin: 5px 0;">
+                                <input type="radio" id="inquiry" name="subject" value="inquiry" checked>
+                                <label for="inquiry" style="font-weight: normal;">General Inquiry</label>
+                            </div>
+                            <div style="margin: 5px 0;">
+                                <input type="radio" id="reservation" name="subject" value="reservation">
+                                <label for="reservation" style="font-weight: normal;">Reservation Question</label>
+                            </div>
+                            <div style="margin: 5px 0;">
+                                <input type="radio" id="suggestion" name="subject" value="suggestion">
+                                <label for="suggestion" style="font-weight: normal;">Website Suggestion</label>
+                            </div>
+                        </fieldset>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="user_message" rows="4" placeholder="Type your message here..."
+                            required
+                            style="width: 100%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 2px; background-color: #eee;"></textarea>
+
+                        <div style="margin-bottom: 15px;">
+                            <input type="checkbox" id="newsletter" name="newsletter"
+                                style="width: auto; display: inline-block;">
+                            <label for="newsletter" style="font-weight: normal; display: inline;">Subscribe to
+                                newsletter</label>
+                        </div>
+
+                        <button type="submit">Get in Touch!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-section">
             <h2>We Are Here to Serve You</h2>
-            <div class="employee-gallery">
-                <figure>
-                    <img src="images/employee1.jpg" alt="Employee 1">
-                    <figcaption>John Doe - Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Employee 2">
-                    <figcaption>Jane Smith - Manager</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Employee 3">
-                    <figcaption>Mike Ross - Instructor</figcaption>
-                </figure>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/employee1.jpg" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Guide</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/employee2.jpg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/employee3.jpg" alt="Mike Ross">
+                    <h3>Mike Ross</h3>
+                    <p>Instructor</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 | Adventure Fun | Elkin Javier Almeida Delgado</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.svg" alt="Instagram">
-            </a>
-        </nav>
+        <p>Adventure Fun &copy; 2025 - Elkin Javier Almeida Delgado</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
     </footer>
 </body>
 
